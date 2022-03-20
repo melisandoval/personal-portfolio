@@ -89,6 +89,7 @@ h2 {
 
 h1 {
   width: 80vw;
+  text-shadow: 0.1em 0.1em var(--beige);
 }
 
 .major,
@@ -109,6 +110,7 @@ h2 {
   text-align: center;
   margin: 2em;
   font-size: 2rem;
+  text-shadow: 0.04em 0.04em var(--beige);
 }
 
 #skills img {
