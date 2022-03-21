@@ -89,21 +89,41 @@ h2 {
 
 h1 {
   width: 80vw;
-  text-shadow: 0.1em 0.1em var(--beige);
 }
 
-.major,
-.minor {
+/* .h1-wrap {
+  display: flex;
+  flex-direction: column;
+} */
+
+.h1-major,
+.h1-minor {
   display: block;
 }
 
-.major {
+.h1-major {
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-shadow: 0.06em 0.06em var(--beige);
 }
 
-.minor {
+.h1-minor {
   font-size: 1.6rem;
+  text-shadow: 0.07em 0.07em var(--beige);
+}
+
+.h1-img {
+  animation: blink 1s step-start infinite;
+}
+
+#h1-arrow-img {
+  display: none;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 h2 {
@@ -219,6 +239,8 @@ h2 {
   scroll-margin-top: 65px;
   background-color: var(--yellow);
   padding: 1em;
+  display: grid;
+  place-items: center;
 }
 
 #about h2 {
@@ -241,6 +263,7 @@ h2 {
 .about-wrap {
   display: grid;
   place-items: center;
+  margin: 2em 0 7em;
 }
 
 #about img {
@@ -279,11 +302,11 @@ footer a {
   h1 {
     width: 70vw;
   }
-  .major {
+  .h1-major {
     font-size: 5rem;
   }
 
-  .minor {
+  .h1-minor {
     font-size: 3rem;
   }
 
@@ -344,9 +367,15 @@ footer a {
 }
 
 @media only screen and (min-width: 1024px) {
-  .h1-wrap {
-    justify-self: start;
-    margin-left: 4em;
+  .h1-major {
+    font-size: 7rem;
+    margin-bottom: 1rem;
+    text-shadow: 0.06em 0.06em var(--beige);
+  }
+
+  .h1-minor {
+    font-size: 3rem;
+    text-shadow: 0.07em 0.07em var(--beige);
   }
 
   .projects-grid {
@@ -377,15 +406,21 @@ footer a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    margin: 4em;
+    justify-content: center;
+    margin: 2em 0 7em;
+    max-width: 70vw;
   }
 
   .about-text {
-    margin-left: 5em;
+    margin-right: 10em;
+    width: 40vw;
   }
 
   #about p {
     font-size: 1.3rem;
+  }
+
+  #about img {
+    max-width: 400px;
   }
 }

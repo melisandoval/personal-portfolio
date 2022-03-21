@@ -23,6 +23,8 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- script -->
+    <script src="index.js"></script>
   </head>
   <body>
     <header>
@@ -39,9 +41,18 @@
       <section id="welcome-section">
         <div class="h1-wrap">
           <h1>
-            <span class="major">Hi, I'm Melisa</span>
-            <span class="minor">and I am a front-end web developer.</span>
+            <span
+              class="h1-major"
+              h1-major-words='["Hi! I&apos;m Melisa,"]'
+            ></span>
+            <span
+              class="h1-minor"
+              h1-minor-words='["and I&apos;m a front-end web developer."]'
+            ></span>
           </h1>
+        </div>
+        <div class="h1-img" id="h1-arrow-img">
+          <img src="https://via.placeholder.com/300" alt="" />
         </div>
       </section>
       <!-- Skills section -->
@@ -252,7 +263,6 @@
       <section id="about">
         <h2>About</h2>
         <div class="about-wrap">
-          <img src="https://via.placeholder.com/800x1000" alt="" />
           <div class="about-text">
             <p>
               With an academic background in Journalism and Communications and
@@ -282,6 +292,7 @@
               >.
             </p>
           </div>
+          <img src="https://via.placeholder.com/1200x1500" alt="" />
         </div>
       </section>
     </main>
