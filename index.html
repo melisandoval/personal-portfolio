@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<!-- Welcome to my code! 
-    If you have any questions you can contact me at:
-    melisandoval@live.com.ar. -->
+<!-- Welcome! 😀
+Thank you for taking the time to check my code.
+If you have any suggestions or questions, please 
+don't hesitate to contact me at melisandoval@live.com.ar.-->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -23,6 +24,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- script -->
     <script src="index.js"></script>
   </head>
@@ -30,9 +37,10 @@
     <header>
       <nav id="navbar">
         <ul>
+          <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -43,21 +51,51 @@
           <h1>
             <span
               class="h1-major"
-              h1-major-words='["Hi! I&apos;m Melisa,"]'
+              h1-major-words='["Hi! I&apos;m Melisa"]'
             ></span>
             <span
               class="h1-minor"
-              h1-minor-words='["and I&apos;m a front-end web developer."]'
+              h1-minor-words='["// Front-end web developer 🙋‍♀️"]'
             ></span>
           </h1>
         </div>
-        <div class="h1-img" id="h1-arrow-img">
-          <img src="https://via.placeholder.com/300" alt="" />
+        <div id="scroll-down-container">
+          <div id="scroll-down">
+            <p>(scroll down)</p>
+            <img src="./img/welcome/arrow-down.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- about section -->
+      <section id="about">
+        <h2>About</h2>
+        <div class="about-wrap">
+          <img src="https://via.placeholder.com/1200x1500" alt="" />
+          <div class="about-text">
+            <p>Welcome to my portfolio!</p>
+            <p>
+              I'm a front-end web developer with enthusiasm for building
+              functional, responsive, user-center and good-looking websites and
+              apps for the people behind the screens.
+            </p>
+            <p>
+              I've been having a lot of fun working with HTML and CSS,
+              JavaScript and React. Currently, I am working in growing my
+              experience with React projects and looking forward to keep
+              learning and growing my skills as a front-end developer.
+            </p>
+            <p>
+              Here you can check out my current skills, tools I use and some of
+              the latest projects I've been working on. Check it out!
+            </p>
+          </div>
         </div>
       </section>
       <!-- Skills section -->
       <section id="skills">
-        <h2>Skills</h2>
+        <div class="skills-title-wrap">
+          <h2>Skills</h2>
+        </div>
         <div class="skills-grid">
           <div class="skill-wrap">
             <div class="html-css-logos-wrap">
@@ -67,10 +105,10 @@
 
             <h3>HTML5 and CSS3</h3>
             <p>
-              I feel pretty comfortable writing HTML and CSS code. All the
-              projects that you can see in this portfolio (and including this
-              site) were hand-coded by me. I feel lucky enough to say: "I know
-              how to center a div" 😜.
+              I am pretty comfortable writing HTML and CSS. All of the projects
+              that you can see in this portfolio (and including this site) were
+              hand-coded by me. I feel lucky enough to say: "I know how to
+              center a div" 😜.
             </p>
           </div>
           <div class="skill-wrap">
@@ -97,7 +135,7 @@
             </p>
           </div>
         </div>
-        <h2>Tools</h2>
+        <h2>The tools I use:</h2>
         <div class="tools-grid">
           <div class="tool-wrap">
             <img src="./img/skills-logos/VSCode.png" alt="VSCode logo" />
@@ -127,8 +165,8 @@
             <div class="tool-description">
               <h3>Photoshop</h3>
               <p>
-                I edit or even create images for my projects since forever. And
-                for that, I always use Photoshop.
+                I edit or even create images for my projects since forever, and
+                in order to do that, I always use Photoshop.
               </p>
             </div>
           </div>
@@ -137,7 +175,7 @@
       <!-- projects section -->
       <section id="projects">
         <div class="latest-projects-title-wrap">
-          <h2>Latest projects</h2>
+          <h2>My latest projects</h2>
         </div>
         <div class="projects-grid">
           <div class="project-tile">
@@ -146,24 +184,32 @@
               alt="Screenshot of the Memory Game project."
             />
             <div class="project-description">
-              <h3>Memory Game</h3>
+              <h3>The Simpsons Memory Game</h3>
+              <ul class="project-tags">
+                <li>React</li>
+                <li>CSS</li>
+              </ul>
               <p>
-                I created this Memory Game from scratch with React, and I had a
-                lot of fun building it (and playing with it). React, JSX, CSS
-                and The Simpsons, what else can I ask? 😜 I invite you to play
-                with it too! (spoiler: the Simpsons characters of the cards are
-                not always the same! 😉).
+                I created this game from scratch with React components and Hooks
+                like useState, useEffect, event handlers like onClick and
+                onChange and JavaScript methods like map, filter,
+                setTimeOut, sort, among others. I had a lot of fun building it
+                (and playing with it). I invite you to play with it too!
+                (spoiler: the Simpsons characters of the cards are not always
+                the same! 😉).
               </p>
               <div class="project-links">
                 <a
                   href="https://simpsons-memory-game.netlify.app/"
                   target="_blank"
+                  class="live-link"
                   >Live</a
                 >
                 <a
                   href="https://github.com/melisandoval/react-memory-game-simpsons"
                   target="_blank"
-                  >GitHub</a
+                  class="repo-link"
+                  >Repo</a
                 >
               </div>
             </div>
@@ -174,24 +220,32 @@
               alt="Screenshot of landing page project."
             />
             <div class="project-description">
-              <h3>Product Landing Page</h3>
+              <h3>Cool Dogs Product Landing Page</h3>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
               <p>
-                I built this product landing page with HTML, CSS, and a bit of
-                JavaScript. I also did the design and the copywriting. This is a
-                personal project, so I wanted to picture how an ecommerce who
-                sells clothes for small dogs would look like. Click on the
-                "Live" button if you want to see an explosion of cuteness 🐶.
+                A product landing page of a company that sells clothes for
+                little dogs. I built this page with HTML, CSS, and a bit of
+                JavaScript. I also designed it and did the copywriting. It has a
+                slideshow gallery where the user can click to see more images
+                and a video of the selling product. Click on the "Live" button
+                if you want to see an explosion of cuteness 🐶.
               </p>
               <div class="project-links">
                 <a
                   href="https://melisandoval.github.io/FCC-Project3-Product-Landing-Page/product.html"
                   target="_blank"
+                  class="live-link"
                   >Live</a
                 >
                 <a
                   href="https://github.com/melisandoval/FCC-Project3-Product-Landing-Page"
                   target="_blank"
-                  >GitHub</a
+                  class="repo-link"
+                  >Repo</a
                 >
               </div>
             </div>
@@ -202,12 +256,16 @@
               alt="Screenshot of a part of the tribute page project."
             />
             <div class="project-description">
-              <h3>Tribute Page</h3>
+              <h3>Janis Joplin Tribute Page</h3>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
               <p>
-                I designed and build this tribute site as a personal project
-                with HTML and CSS. It has a parallax scrolling, a timeline
-                section, flipping-music-albums with embed Spotify links, and
-                lots of fun GIFs that I found on the Internet (yes, I felt kinda
+                I designed and build this tribute site as a personal project. It
+                has a parallax scrolling, a timeline section,
+                flipping-music-albums with embed Spotify links, and lots of fun
+                GIFs that I found on the Internet (yes, I felt kinda
                 <a
                   href="https://www.youtube.com/watch?v=ae5UXhUtxao"
                   target="_blank"
@@ -220,12 +278,14 @@
                 <a
                   href="https://melisandoval.github.io/Tribute-Page-Project/"
                   target="_blank"
+                  class="live-link"
                   >Live</a
                 >
                 <a
                   href="https://github.com/melisandoval/Tribute-Page-Project"
                   target="_blank"
-                  >GitHub</a
+                  class="repo-link"
+                  >Repo</a
                 >
               </div>
             </div>
@@ -233,88 +293,73 @@
           <div class="project-tile">
             <img src="./img/projects-img/survey-form.png" alt="" />
             <div class="project-description">
-              <h3>Survey Form</h3>
+              <h3>Harry Potter Survey Form</h3>
+              <ul class="project-tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
               <p>
-                I know that forms are a basic thing to build, but I still wanted
-                to include this one in my portfolio (so you can see that I know
-                how to create forms). I designed and wrote this one with HTML
-                and CSS and is responsive. Also did a bit of research about the
-                best UX practices for forms and put those in practice here
-                (because I think that UX is important). I had a bit of fun with
-                the copywriting too (I love Harry Potter 🔮).
+                Any Harry Potter fan out there? I designed and build this form
+                with HTML and CSS. In this project, I put in practice all the
+                <a
+                  href="https://medium.com/nextux/form-design-best-practices-9525c321d759"
+                  target="_blank"
+                  >UX recommendations for forms
+                </a>
+                I could apply in this particular case. I think that UX and UI is
+                key, and I want to keep learning about the best practices in UX
+                and implementing them in my projects.
               </p>
               <div class="project-links">
                 <a
                   href="https://melisandoval.github.io/FCC-Project2-Survey-Form/"
                   target="_blank"
+                  class="live-link"
                   >Live</a
                 >
                 <a
                   href="https://github.com/melisandoval/FCC-Project2-Survey-Form"
                   target="_blank"
-                  >GitHub</a
+                  class="repo-link"
+                  >Repo</a
                 >
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- about section -->
-      <section id="about">
-        <h2>About</h2>
-        <div class="about-wrap">
-          <div class="about-text">
-            <p>
-              With an academic background in Journalism and Communications and
-              professional experience in web copywriting, someday I decided to
-              fulfill an old inner desired of design and build stuff. I learned
-              how to code HTML and CSS, and then JavaScript and React.
-            </p>
-            <p>
-              I am looking forward to keep learning front-end web development
-              and design and keep creating functional and good-looking web
-              products.
-            </p>
-            <p>
-              Check out my
-              <a
-                id="profile-link"
-                href="https://github.com/melisandoval"
-                target="_blank"
-                >GitHub</a
-              >
-              if you want to see my more recent work.
-            </p>
-            <p>
-              Contact me at
-              <a href="mailto:melisandoval@live.com.ar"
-                >melisandoval@live.com.ar</a
-              >.
-            </p>
+      <section id="contact">
+        <h2>Get in touch!</h2>
+        <div class="contact-wrap">
+          <div class="contact-item">
+            <img src="./img/contact/email-icon.png" alt="email icon" />
+            <!-- <p>melisandoval@live.com.ar</p> -->
           </div>
-          <img src="https://via.placeholder.com/1200x1500" alt="" />
+          <div class="contact-item">
+            <img src="img/contact/linkedin-icon.png" alt="Linkedin icon" />
+            <!-- <p>Linkedin</p> -->
+          </div>
+          <div class="contact-item">
+            <a
+              id="profile-link"
+              href="https://github.com/melisandoval"
+              target="_blank"
+              ><img src="img/contact/github-icon-beige.png" alt="Github icon"
+            /></a>
+            <!-- <p>github</p> -->
+          </div>
+          <div class="contact-item">
+            <img
+              src="img/contact/freeCodeCamp-icon.png"
+              alt="freeCodeCamp icon"
+            />
+            <!-- <p>freeCodeCamp</p> -->
+          </div>
         </div>
       </section>
     </main>
     <footer>
-      <p>
-        Portfolio page coded by
-        <a href="https://github.com/melisandoval" target="_blank"
-          >Melisa Sandoval</a
-        >
-        fulfilling
-        <a
-          href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-personal-portfolio-webpage"
-          target="_blank"
-          >these requirements</a
-        >
-        from the
-        <a
-          href="https://www.freecodecamp.org/learn/responsive-web-design/#responsive-web-design-projects"
-          target="_blank"
-          >freeCodeCamp Responsive Web Design course</a
-        >.
-      </p>
+      <p>Portfolio designed and coded by Melisa Sandoval.</p>
     </footer>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

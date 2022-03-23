@@ -30,12 +30,12 @@ const init = () => {
 
   //init TypeWriter:
   new TypeWriter(h1Major, h1MajorWords);
-  setTimeout(() => new TypeWriter(h1Minor, h1MinorWords), 1700);
+  setTimeout(() => new TypeWriter(h1Minor, h1MinorWords), 1200);
 };
 
 // Init on DOM load
 document.addEventListener("DOMContentLoaded", init);
 
 setTimeout(() => {
-  document.getElementById("h1-arrow-img").style.display = "block";
-}, 3200);
+  document.getElementById("scroll-down-container").style.display = "block";
+}, 2900);
