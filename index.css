@@ -298,10 +298,14 @@ h1 {
 }
 
 .project-tile img {
-  max-width: 100%;
+  width: 100%;
   aspect-ratio: 16/9;
   border-radius: 0.3em;
   margin: 1em 0 0.5em;
+}
+
+.project-tile {
+  width: 80vw;
 }
 
 #projects h3 {
@@ -309,16 +313,17 @@ h1 {
   font-weight: 900;
   background-color: var(--beige);
   padding: 0.2em;
+  width: 80vw;
 }
 
 .project-links {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .project-links a {
-  margin: 1em 0;
+  margin: 1em 1em 0 0;
   font-size: 1.1rem;
   padding: 0.2em 1em 0.3em;
   text-decoration: none;
@@ -456,7 +461,33 @@ footer p {
   }
 
   #skills h3 {
-    font-size: 2.2rem;
+    font-size: 2.4rem;
+  }
+
+  #projects h3 {
+    font-size: 3rem;
+  }
+
+  .project-tags {
+    font-size: 1.4rem;
+  }
+
+  .project-links a {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .h1-major {
+    font-size: 8rem;
+  }
+
+  .h1-minor {
+    font-size: 4.5rem;
+  }
+
+  h2 {
+    font-size: 4rem;
   }
 }
 
@@ -491,6 +522,12 @@ footer p {
   }
 
   .project-tile {
+    width: 35vw;
+  }
+
+  #projects h3,
+  #projects p,
+  #projects img {
     width: 35vw;
   }
 }
