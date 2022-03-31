@@ -31,7 +31,7 @@ p {
 
 h2 {
   text-align: center;
-  margin: 2em;
+  /* margin: 2em; */
   font-size: 2rem;
   text-shadow: 0.04em 0.04em var(--beige);
 }
@@ -58,7 +58,8 @@ h3 {
   padding-inline-start: 0;
   margin-block-start: 0;
   margin-block-end: 0;
-  padding: 1em 0.2em 1em 0;
+  /* padding: 1em 0.2em 1em 0; */
+  padding: 1em 0 1em 0;
   display: flex;
   flex-direction: row;
   justify-content: end;
@@ -87,7 +88,7 @@ h3 {
   place-items: center;
   align-items: center;
   justify-items: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 h1,
@@ -279,7 +280,7 @@ h1 {
 .latest-projects-title-wrap {
   width: 100%;
   background-color: var(--yellow);
-  height: 300px;
+  height: 10em;
   display: grid;
   place-items: center;
 }
@@ -353,6 +354,7 @@ h1 {
   display: grid;
   place-items: center;
   align-content: center;
+  justify-content: center;
 }
 
 .contact-wrap {
