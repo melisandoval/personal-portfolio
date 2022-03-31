@@ -31,7 +31,6 @@ p {
 
 h2 {
   text-align: center;
-  /* margin: 2em; */
   font-size: 2rem;
   text-shadow: 0.04em 0.04em var(--beige);
 }
@@ -209,7 +208,8 @@ h1 {
   aspect-ratio: 1 / 1;
 }
 
-#skills h2 {
+#skills h2,
+#projects h2 {
   margin: 1em;
 }
 
