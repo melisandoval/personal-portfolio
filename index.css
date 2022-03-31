@@ -280,7 +280,7 @@ h1 {
 .latest-projects-title-wrap {
   width: 100%;
   background-color: var(--yellow);
-  height: 10em;
+  /* height: 10em; */
   display: grid;
   place-items: center;
 }
