@@ -477,6 +477,18 @@ footer p {
   }
 }
 
+.download-resume-div {
+  display: flex;
+}
+
+.download-resume-div p {
+  color: white;
+  margin-left: 0.5em;
+}
+#contact a {
+  text-decoration: none;
+}
+
 @media only screen and (min-width: 820px) {
   .h1-major {
     font-size: 8rem;
