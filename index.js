@@ -1,6 +1,5 @@
 // H1 typewriter effect
 // code adapted from: https://www.youtube.com/watch?v=POX3dT-pB4E
-
 class TypeWriter {
   constructor(span, words) {
     this.span = span;
@@ -9,7 +8,7 @@ class TypeWriter {
     this.wordIndex = 0;
     this.type();
   }
-  //Type Method:
+  //Type method:
   type() {
     const current = this.wordIndex % this.words.length;
     const fullTxt = this.words[current];
@@ -39,3 +38,14 @@ document.addEventListener("DOMContentLoaded", init);
 setTimeout(() => {
   document.getElementById("scroll-down-container").style.display = "block";
 }, 2900);
+
+// for the hamburger menu on mobile:
+// code adapted from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+function showMenu() {
+  const navLinks = document.getElementById("nav-links");
+  if (navLinks.style.display === "block") {
+    navLinks.style.display = "none";
+  } else {
+    navLinks.style.display = "block";
+  }
+}

@@ -28,16 +28,25 @@ don't hesitate to contact me at melisandoval@live.com.ar.-->
     />
     <!-- script -->
     <script src="index.js"></script>
+    <!-- burger icon for navbar -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
       <nav id="navbar">
-        <ul>
+        <ul id="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- hamburger icon -->
+        <a href="javascript:void(0);" class="icon" onclick="showMenu()">
+          <i class="fa fa-bars"></i>
+        </a>
       </nav>
     </header>
     <main>
