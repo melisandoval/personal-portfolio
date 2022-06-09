@@ -35,6 +35,7 @@ const init = () => {
 // Init on DOM load
 document.addEventListener("DOMContentLoaded", init);
 
+// Scroll down text:
 setTimeout(() => {
   document.getElementById("scroll-down-container").style.display = "block";
 }, 2900);
