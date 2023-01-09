@@ -363,10 +363,12 @@ h1 {
 .live-link {
   background-color: var(--red);
   color: var(--beige);
+  border: solid 0.1em var(--red);
 }
 
 .repo-link {
   background-color: var(--yellow);
+  border: solid 0.1em var(--yellow);
 }
 
 .project-links a:hover {
