@@ -249,6 +249,8 @@ h1 {
 
 .skill-wrap {
   /* max-width: 80vw; */
+  display: grid;
+  place-items: center;
   margin-top: 2em;
   margin-bottom: 2em;
   /* display: grid;
@@ -531,6 +533,13 @@ footer p {
 }
 #contact a {
   text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #skills img {
+    width: 90px;
+    height: 90px;
+  }
 }
 
 @media only screen and (min-width: 820px) {
