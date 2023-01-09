@@ -218,7 +218,10 @@ h1 {
 
 #skills img {
   width: 60px;
-  aspect-ratio: 1 / 1;
+  height: 60px;
+  object-fit: contain;
+  /* object-fit: cover; */
+  /* aspect-ratio: 1 / 1; */
 }
 
 #skills h2,
@@ -232,22 +235,33 @@ h1 {
 
 .skills-grid {
   margin-top: 5em;
-}
-
-.skills-grid,
-.tools-grid {
+  max-width: 100%;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
 
-.skill-wrap,
-.tool-wrap {
-  max-width: 80vw;
+.skills-grid p {
+  font-size: 0.9rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.skill-wrap {
+  /* max-width: 80vw; */
   margin-top: 2em;
   margin-bottom: 2em;
-  display: grid;
-  place-items: center;
+  /* display: grid;
+  place-items: center; */
 }
+
+/* .skill-logo-container {
+  max-height: 100px;
+} */
+/* 
+.skill-logo-container img {
+  height: 100%;
+} */
 
 .html-css-logos-wrap {
   display: flex;
@@ -458,9 +472,9 @@ footer p {
     max-width: 100px;
   }
 
-  #skills img {
+  /* #skills img {
     width: 100px;
-  }
+  } */
 
   #about img {
     max-width: 250px;
@@ -472,20 +486,18 @@ footer p {
 }
 
 @media only screen and (min-width: 670px) {
-  .skills-grid,
-  .tools-grid {
+  .skills-grid {
     margin: 4em 3em;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
   }
 
-  .skill-wrap,
-  .tool-wrap {
-    width: 30vw;
-    margin: 2em 2em 0 2em;
+  .skill-wrap {
+    /* width: 30vw; */
+    margin: 2em;
   }
 
   h2 {
@@ -557,6 +569,10 @@ footer p {
   #about img {
     max-width: 300px;
     margin-right: 5em;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(5, 1fr);
   }
 
   .projects-grid {
