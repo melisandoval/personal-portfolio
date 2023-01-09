@@ -1,4 +1,6 @@
-# Personal portfolio
+# Personal portfolio website
 
-Personal portfolio website.
-Live: https://melisandoval.github.io/personal-portfolio/
+- HTML, CSS and JavaScript.
+- Responsive design.
+
+Live version: https://melisandoval.github.io/personal-portfolio/
